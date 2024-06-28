@@ -1,17 +1,37 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: #ffeddd;
 }
 
 .App-header {
-  background-color: #ffeddd;
+  background-color: #b0e0e6;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+}
+
+.App-center {
+  /* max-width in percentage */
+  max-width: 80%;
+  background-color: #ffeddd;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
+  font-size: 20px;
+  color: black;
+  /*border: 2px solid #000; /* Add border here */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Add padding inside the border */
+  margin: 10px; /* Add margin outside the border */
+  text-align: justify; /* Justify text */
 }
+
+
 
 .App-link {
   color: #1a73e8;
@@ -21,8 +41,8 @@
 }
 
 .App-button {
-  background-color: #B0E0E6; /* Button background color */
-  border: none; /*10px transparent #1a73e8; /* Button border color and width */
+  background-color: #ffeddd; /* Button background color */
+  border: none;
   padding: 10px; /* Padding inside the button */
   cursor: pointer; /* Cursor on hover */
   border-radius: 35px; /* Rounded corners */
@@ -34,13 +54,11 @@
   margin: 10px; /* Adjust the value as needed */
 }
 
-
 .button-image {
   width: 40px; /* Adjust size as needed */
   height: 40px; /* Adjust size as needed */
 }
 
-  
 .App-button:hover {
   color: #0b55d4; /* Darker color for hover effect */
 }
@@ -53,10 +71,24 @@
 .left-image {
   width: 250px; /* Adjust the size as needed */
   height: auto;
+  object-fit: cover;
   margin-right: 20px; /* Space between image and content */
   border-radius: 150px; /* Adjust this value for the desired roundness */
 }
 
 .content {
+  font-size: 16px; /* Adjust text size as needed */
   text-align: left;
+}
+
+.website-text {
+  font-size: 16px; /* Adjust text size as needed */
+  text-align: center;
+}
+
+.cursive-text {
+  font-style: italic; /* Makes the text cursive */
+  font-size: 14px; /* Adjust text size as needed */
+  text-align: left;
+  margin-left: -17vh;
 }
