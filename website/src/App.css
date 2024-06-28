@@ -1,15 +1,55 @@
 .App {
-  text-align: left;
+  text-align: center;
   background-color: #ffeddd;
 }
 
-.App-header {
-  background-color: #b0e0e6;
-  min-height: 100vh;
+.App-all {
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: black;
+  /*max-width: 100vh;*/
+}
+
+.container_small {
+  background-color: rgb(0, 255, 0);
+  display: flex;
+  justify-content: center; /* Center the container content horizontally */
+  align-items: center; /* Center items vertically within the container */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.container {
+  background-color: red;
+  display: flex;
+  justify-content: center; /* Center the container content horizontally */
+  align-items: center; /* Center items vertically within the container */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  min-height: 100vh;
+  max-width: 100vh;
+}
+
+.App-button-bar {
+  background-color: rgb(199, 19, 235);
+  display: flex; /* Change to flex to use flex properties correctly */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the button bar */
+  justify-content: center; /* Center items vertically within the button bar */
+  color: black;
+  /* max-width: 100vh; */
+}
+
+
+.App-picture {
+  background-color: #b0e0e6;
+  
+  max-width: 140vh;
+  display: flex;
+  align-items: center; /* Center items vertically within the picture */
+  justify-content: center; /* Center items horizontally within the picture */
   flex-direction: column;
   color: black;
 }
@@ -33,6 +73,7 @@
 
 
 
+
 .App-link {
   color: #1a73e8;
   font-size: 15px;
@@ -45,12 +86,12 @@
   border: none;
   padding: 10px; /* Padding inside the button */
   cursor: pointer; /* Cursor on hover */
-  border-radius: 35px; /* Rounded corners */
+  border-radius: 32px; /* Rounded corners */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px; /* Set desired width */
-  height: 70px; /* Set desired height */
+  width: 64px; /* Set desired width */
+  height: 64px; /* Set desired height */
   margin: 10px; /* Adjust the value as needed */
 }
 
@@ -90,5 +131,36 @@
   font-style: italic; /* Makes the text cursive */
   font-size: 14px; /* Adjust text size as needed */
   text-align: left;
-  margin-left: -13vh;
+  margin-left:0vh;
+}
+
+
+header {
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Optional: Add padding */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .App-center {
+    order: 3;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* Media query for desktop devices */
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+  }
+  .App-center {
+    order: 2; /* Ensure this comes after .App-picture and .App-button-bar */
+    margin-left: 20px;
+  }
 }

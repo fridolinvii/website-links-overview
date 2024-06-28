@@ -5,10 +5,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="content-wrapper">
-          <img src={myImage} className="left-image" alt="My Image" />
-          <div className="content">
+      <header className="App-all">
+      <div class="container">
+        <div class="container_small">
+          <div className="App-picture">
+            <div className="content-wrapper">
+            <img src={myImage} className="left-image" alt="My Image" />
+            </div>
+            <div className="website-text">
+            <p className="cursive-text">
+             Dr. sc. med. in Biomedical Engineering<br />
+             M. Sc. in Mathematics
+            </p>            
+            </div>
+          </div>
+          <div className="App-button-bar">
             <p>
               <button
                 className="App-button"
@@ -28,30 +39,26 @@ function App() {
               >
                 <img src={require('./images/linkedin.png')} alt="LinkedIn" className="button-image" />
               </button>
+              <button
+                className="App-button"
+                onClick={() => window.location.href = "mailto:example@example.com"}
+              >
+                <img src={require('./images/letter.png')} alt="Mail" className="button-image" />
+              </button>
             </p>
-          </div>       
-        </div>
-        <div className="website-text">
-          <p className="cursive-text">
-            Dr. sc. med. in Biomedical Engineering<br />
-            M. Sc. in Mathematics
-          </p>
-        </div>
+            </div>
+            </div>
+          
+           
+
+       
         <div className="App-center">
         As a mathematician with a PhD in Biomedical Engineering, I possess
 strong analytical and problem-solving skills. My academic career
 has equipped me to work both independently and collaboratively to
-address complex challenges with innovative solutions. <br /><br />
-I have hands-on experience applying mathematical approaches in various practical settings, including during civil service and PhD research. I have also taught and supervised master’s and PhD students,
-helping them develop crucial skills and understanding of essential tools
-and techniques.
-{/*”Mr. Seppi demonstrated the ability to work independently with creativity and to think
-outside of the box. [...] I know him as a motivated, enthusiastic and a dedicated
-student [...] other co-workers and Ph.D. students [...] commented favourably about
-working with him.” - Certificate of employment, University of Basel
-”I liked how Carlo, kindly and patently, told me where in my code I went wrong and
-gave advice on what I could try without giving the answer. He always responded to
-emails very quickly. I really enjoyed the process and learnt a lot.” - Student feedback*/}
+address complex challenges with innovative solutions.
+           </div>
+      
            </div>
       </header>
     </div>
