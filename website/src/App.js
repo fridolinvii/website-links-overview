@@ -61,7 +61,7 @@ function App() {
           My academic journey and extracurricular activities have enhanced my ability 
           to tackle complex challenges and develop innovative solutions.
         </p>
-        <p>P.S. If you want to host your own website like this, you can find the source code on my <a href="URL">GitHub</a> page.</p>
+        <p>P.S. If you want to host your own website like this, you can find a step-by-step guide on my <a href="URL">GitHub</a> page.</p>
 
            </div>
       
