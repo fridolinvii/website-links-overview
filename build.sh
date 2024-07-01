@@ -49,16 +49,15 @@ fi
 
 # check if website container is running
 if [ "$(docker ps -q -f name=$WEBSITE_CONTAINER_NAME)" ]; then
-echo "$(docker ps -q -f name=$WEBSITE_CONTAINER_NAME)"
     echo "Container $WEBSITE_CONTAINER_NAME exists."
     read -p "Do you want to remove the container and image $WEBSITE_CONTAINER_NAME? (y/n): " remove_container
     # Check the user input and act accordingly
     if [[ $remove_container == "y" || $remove_container == "Y" ]]; then
             # stop and remove container
-            docker stop $WEBSITE_CONTAINER_NAME
-            docker remove $WEBSITE_CONTAINER_NAME
+            docker stop  $WEBSITE_CONTAINER_NAME
+            docker remove  $WEBSITE_CONTAINER_NAME
             # remove image
-            docker rmi $WEBSITE_CONTAINER_NAME
+            docker rmi -f $WEBSITE_CONTAINER_NAME
     else
         echo "Nothing to do..."
         exit 1
