@@ -45,10 +45,11 @@ else
 fi
 
 #######################################################################################
-
+### HERE WE START THE WEBSITE CONTAINER ###
 
 # check if website container is running
-if [ ! "$(docker ps -q -f name=$WEBSITE_CONTAINER_NAME)" ]; then
+if [ "$(docker ps -q -f name=$WEBSITE_CONTAINER_NAME)" ]; then
+echo "$(docker ps -q -f name=$WEBSITE_CONTAINER_NAME)"
     echo "Container $WEBSITE_CONTAINER_NAME exists."
     read -p "Do you want to remove the container and image $WEBSITE_CONTAINER_NAME? (y/n): " remove_container
     # Check the user input and act accordingly
