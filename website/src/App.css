@@ -32,15 +32,7 @@
   max-width: 100vh;
 }
 
-.App-button-bar {
-  background-color: #b0e0e6; /*rgb(199, 19, 235);*/
-  display: flex; /* Change to flex to use flex properties correctly */
-  flex-direction: column;
-  align-items: center; /* Center items horizontally within the button bar */
-  justify-content: center; /* Center items vertically within the button bar */
-  color: black;
-  /* max-width: 100vh; */
-}
+
 
 
 .App-picture {
@@ -66,7 +58,7 @@
   padding: 10px; /* Add padding inside the border */
   margin: 10px; /* Add margin outside the border */
   text-align: justify; /* Justify text */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .App-center:after {
@@ -78,16 +70,21 @@
 
 
 
-.App-link {
-  color: #1a73e8;
-  font-size: 15px;
-  display: block;
-  margin: 1px; /* Adjust the margin to reduce space between links */
+
+
+.App-button-bar {
+  background-color: #b0e0e6;
+  display: flex; /* Change to flex to use flex properties correctly */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the button bar */
+  justify-content: center; /* Center items vertically within the button bar */
+  color: black;
 }
 
 .App-button {
   background-color: #ffeddd; /* Button background color */
   border: none;
+  flex-direction: row;
   padding: 10px; /* Padding inside the button */
   cursor: pointer; /* Cursor on hover */
   border-radius: 32px; /* Rounded corners */
@@ -150,6 +147,7 @@ header {
   .container {
     flex-direction: column;
   }
+
   .App-center {
     order: 3;
     margin-top: 20px;
@@ -161,6 +159,13 @@ header {
 /* Media query for desktop devices */
 @media (min-width: 769px) {
   .container {
+    flex-direction: row;
+  }
+  .container_small {
+    flex-direction: column;
+    
+  }
+  .App-button-bar {
     flex-direction: row;
   }
   .App-center {

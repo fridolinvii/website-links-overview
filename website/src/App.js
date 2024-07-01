@@ -20,7 +20,7 @@ function App() {
             </div>
           </div>
           <div className="App-button-bar">
-            <p>
+            
               <button
                 className="App-button"
                 onClick={() => window.open("https://github.com/fridolinvii", "_blank")}
@@ -45,9 +45,9 @@ function App() {
               >
                 <img src={require('./images/letter.png')} alt="Mail" className="button-image" />
               </button>
-            </p>
-            </div>
-            </div>
+            
+          </div>
+        </div>
           
            
 
