@@ -41,7 +41,7 @@ function App() {
               </button>
               <button
                 className="App-button"
-                onClick={() => window.location.href = "mailto:example@example.com"}
+                onClick={() => window.location.href = "mailto:job@carloseppi.xyz"}
               >
                 <img src={require('./images/letter.png')} alt="Mail" className="button-image" />
               </button>
@@ -53,10 +53,16 @@ function App() {
 
        
         <div className="App-center">
-        As a mathematician with a PhD in Biomedical Engineering, I possess
-strong analytical and problem-solving skills. My academic career
-has equipped me to work both independently and collaboratively to
-address complex challenges with innovative solutions.
+        <h1>Carlo Seppi</h1>
+        <p>Welcome to my website. Here you will find links to my profiles on <a href="https://github.com/fridolinvii">GitHub</a>, <a href="https://www.researchgate.net/profile/Carlo-Seppi">ResearchGate</a>, <a href="https://www.linkedin.com/in/carlo-seppi-0a2222169">LinkedIn</a>, and my <a href="mailto:job@carloseppi.xyz">email address</a>.
+        </p>
+        <p>With a PhD in Biomedical Engineering and a Masters in Mathematics, 
+          I bring exceptional analytical and problem-solving skills to the table. 
+          My academic journey and extracurricular activities have enhanced my ability 
+          to tackle complex challenges and develop innovative solutions.
+        </p>
+        <p>P.S. If you want to host your own website like this, you can find the source code on my <a href="URL">GitHub</a> page.</p>
+
            </div>
       
            </div>

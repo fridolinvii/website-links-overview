@@ -1,6 +1,3 @@
-docker stop website_links
-docker remove website_links
-
 docker run --detach \
     --name website_links \
     --env "VIRTUAL_HOST=carloseppi.xyz, www.carloseppi.xyz" \
