@@ -2,6 +2,8 @@ docker build -t website_links .
 docker exec -it website_links /bin/bash
 
 
+sudo apt install docker.io
+
 https://github.com/nginx-proxy/acme-companion
 
 
