@@ -1,21 +1,25 @@
 import React from 'react';
-import myImage from './images/Carlo_Seppi_18.6.24.png';
 import './App.css';
+import config from './config'; // Importing the generated configuration
+
+const imagePath = config.imagePath;
+
 
 function App() {
-  return (
+
+   return (
     <div className="App">
       <header className="App-all">
       <div class="container">
         <div class="container_small">
           <div className="App-picture">
             <div className="content-wrapper">
-            <img src={myImage} className="left-image" alt="Profile_picture" />
+            <img src={require(`${imagePath}`)} className="left-image" alt="Profile_picture" />
             </div>
             <div className="website-text">
             <p className="cursive-text">
-             Dr. sc. med. in Biomedical Engineering<br />
-             M. Sc. in Mathematics
+            {process.env.REACT_APP_TITLE_1} < br />
+            {process.env.REACT_APP_TITLE_2} 
             </p>            
             </div>
           </div>
@@ -23,25 +27,25 @@ function App() {
             
               <button
                 className="App-button"
-                onClick={() => window.open("https://github.com/fridolinvii", "_blank")}
+                onClick={() => window.open(process.env.REACT_APP_GITHUB_URL, "_blank")}
               >
                 <img src={require('./images/github.png')} alt="GitHub" className="button-image" />
               </button>
               <button
                 className="App-button"
-                onClick={() => window.open("https://www.researchgate.net/profile/Carlo-Seppi", "_blank")}
+                onClick={() => window.open(process.env.REACT_APP_RESEARCHGATE_URL, "_blank")}
               >
                 <img src={require('./images/researchgate.png')} alt="ResearchGate" className="button-image" />
               </button>
               <button
                 className="App-button"
-                onClick={() => window.open("https://www.linkedin.com/in/carlo-seppi-0a2222169", "_blank")}
+                onClick={() => window.open(process.env.REACT_APP_LINKEDIN_URL, "_blank")}
               >
                 <img src={require('./images/linkedin.png')} alt="LinkedIn" className="button-image" />
               </button>
               <button
                 className="App-button"
-                onClick={() => window.location.href = "mailto:job@carloseppi.xyz"}
+                onClick={() => window.location.href = `mailto:${process.env.REACT_APP_MAIL}`}
               >
                 <img src={require('./images/letter.png')} alt="Mail" className="button-image" />
               </button>
@@ -53,14 +57,10 @@ function App() {
 
        
         <div className="App-center">
-        <h1>Carlo Seppi</h1>
-        <p>Welcome to my website. Here you will find links to my profiles on <a href="https://github.com/fridolinvii">GitHub</a>, <a href="https://www.researchgate.net/profile/Carlo-Seppi">ResearchGate</a>, <a href="https://www.linkedin.com/in/carlo-seppi-0a2222169">LinkedIn</a>, and my <a href="mailto:job@carloseppi.xyz">email address</a>.
+        <h1>{process.env.REACT_APP_NAME}</h1>
+        <p>Welcome to my website. Here you will find links to my profiles on <a href={process.env.REACT_APP_GITHUB_URL}>GitHub</a>, <a href={process.env.REACT_APP_RESEARCHGATE_URL}>ResearchGate</a>, <a href={process.env.REACT_APP_LINKEDIN_URL}>LinkedIn</a>, and my <a href={`mailto:${process.env.REACT_APP_MAIL}`}>email address</a>.
         </p>
-        <p>With a PhD in Biomedical Engineering and a Masters in Mathematics, 
-          I bring exceptional analytical and problem-solving skills to the table. 
-          My academic journey and extracurricular activities have enhanced my ability 
-          to tackle complex challenges and develop innovative solutions.
-        </p>
+        <p>{process.env.REACT_APP_DESCRIPTION}</p>
         <p>P.S. If you want to host your own website like this, you can find a step-by-step guide on my <a href="https://github.com/fridolinvii/website-links-overview">GitHub</a> page.</p>
 
            </div>
