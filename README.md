@@ -20,7 +20,6 @@ wget -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh
 # restart .bashrc
 source .bashrc
 
-
 yarn install
 yarn create react-app website_links
 yarn start 

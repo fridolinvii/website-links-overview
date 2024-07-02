@@ -23,7 +23,8 @@ COPY ./website/package.json ./website/yarn.lock ./
 RUN yarn install
 
 # Install missing peer dependencies
-RUN yarn add @babel/core@latest @testing-library/dom@latest @babel/plugin-syntax-flow@latest
+RUN yarn add @babel/core@latest @testing-library/dom@latest @babel/plugin-syntax-flow@latest 
+
 
 # Copy the rest of the application code to the working directory
 COPY ./website .

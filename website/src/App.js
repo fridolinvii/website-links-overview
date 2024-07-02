@@ -61,8 +61,7 @@ function App() {
         <p>Welcome to my website. Here you will find links to my profiles on <a href={process.env.REACT_APP_GITHUB_URL}>GitHub</a>, <a href={process.env.REACT_APP_RESEARCHGATE_URL}>ResearchGate</a>, <a href={process.env.REACT_APP_LINKEDIN_URL}>LinkedIn</a>, and my <a href={`mailto:${process.env.REACT_APP_MAIL}`}>email address</a>.
         </p>
         <p>{process.env.REACT_APP_DESCRIPTION}</p>
-        <p>P.S. If you want to host your own website like this, you can find a step-by-step guide on <a href="https://github.com/fridolinvii/website-links-overview">GitHub</a> page.</p>
-
+         <p>P.S. If you want to host your own website like this, you can find a step-by-step guide on my <a href="https://github.com/fridolinvii/website-links-overview">GitHub</a> page.</p>
            </div>
       
            </div>
