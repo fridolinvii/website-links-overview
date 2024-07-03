@@ -1,5 +1,5 @@
 # Website Hosting
-You can follow this step-by-step guide on how to host this website on your Ubuntu server so that it will be accessible with HTTPS.
+You can follow this step-by-step guide on how to host this website on your Ubuntu server so that it will be accessible with HTTPS and gives an overview of the links from your Researchgate, LinkedIn, and GitHub account.
 
 ## Step 1 - Domain
 Get a domain, for example from [namecheap.com](www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
@@ -54,6 +54,7 @@ nano website/.env
 ```
 
 ## Step 4 - Start
+I followed the instruction of [nginx-proxy/acme](https://github.com/nginx-proxy/acme-companion) and summarized it for my needs.
 Execute 
 ```
 ./build.sh
