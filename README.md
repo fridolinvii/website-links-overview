@@ -1,9 +1,9 @@
 # Website Hosting
-You can follow this step-by-step guide, how you can host this website on your ubuntu-server, so it will be accessible with https. 
+You can follow this step-by-step guide on how to host this website on your Ubuntu server so that it will be accessible with HTTPS.
 
 ## Step 1 - Domain
-Get a domain, for example on [namecheap.com](www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
-Choose `A Record` with Host `@` (or the some prefix you want to choose, e.g., `www`) and the Value your IP-Address.
+Get a domain, for example from [namecheap.com](www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
+Next, set up an A Record with the Host as `@` (or a specific prefix you want to use, e.g., `www`) and the Value as your IP address.
 
 ## Step 2 - Install
 Install the packages needed
