@@ -70,18 +70,3 @@ and
 yarn start
 ```
 If you do changes in _template/.env_ you need to stop it (`Ctrl-C`) and start it again.
-
-
-
-
-
-
-
-
-https://github.com/nginx-proxy/acme-companion
-
-
-yarn install
-yarn create react-app website_links
-yarn start 
-
