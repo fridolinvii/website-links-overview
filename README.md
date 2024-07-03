@@ -69,4 +69,4 @@ and
 ```
 yarn start
 ```
-If you do changes in _template/.env_ you need to stop it (`Ctrl-C`) and start it again.
+If you do changes in _website/.env_ you need to stop it (`Ctrl-C`) and start it again.
