@@ -1,24 +1,85 @@
-docker build -t website_links .
-docker exec -it website_links /bin/bash
+# Website Hosting
+You can follow this step-by-step guide, how you can host this website on your ubuntu-server, so it will be accessible with https. 
+
+## Step 1 - Domain
+Get a domain, for example on [namecheap.com](www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
+Choose `A Record` with Host `@` (or the some prefix you want to choose, e.g., `www`) and the Value your IP-Address.
+
+## Step 2 - Install
+Install the packages needed
+```
+sudo apt install docker.io npm git nano
+npm install --global yarn
+```
+And pull the GitHub repository
+```
+git pull git@github.com:fridolinvii/website-links-overview.git
+```
+and enter the folder. 
+```
+cd website-links-overview
+```
+
+Follow the instruction on [nodejs.org](nodejs.org) to install _Node.js_:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+then execute _.bashrc_
+```
+source ~/.bashrc
+```
+and finally install the newest _Node.js_ version, e.g.,
+```
+nvm install 22
+```
+
+## Step 3 - Setup
+This gives the parameters to build the dockers. Copy the _.env.template_ to _.env_, and edit them accodingly to your wishes. 
+Copy:
+```
+cp .env.template .env
+```
+Edit:
+```
+nano .env
+```
+
+Also do this in the `website` folder:
+```
+cp website/.env.template website/.env
+```
+and edit it accoding to your wishes:
+```
+nano website/.env
+```
+
+## Step 4 - Start
+Execute 
+```
+./build.sh
+```
+and follow the instruction. This will build you three dockers, and you can test you website.
+
+## Hint
+If you want to edit the website and check the changes, you can locally start the website:
+```
+yarn install
+```
+and 
+```
+yarn start
+```
+If you do changes in _template/.env_ you need to stop it (`Ctrl-C`) and start it again.
 
 
-sudo apt install docker.io
+
+
+
+
+
 
 https://github.com/nginx-proxy/acme-companion
 
-
-sudo apt install npm
-npm install --global yarn
-yarn add @babel/core@latest @testing-library/dom@latest @babel/plugin-syntax-flow@latest
-
-
-https://nodejs.org/en/download/package-manager
-# install node.js
-wget -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh 
-./install_node.sh
-
-# restart .bashrc
-source .bashrc
 
 yarn install
 yarn create react-app website_links
