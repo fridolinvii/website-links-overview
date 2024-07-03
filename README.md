@@ -59,7 +59,10 @@ Execute
 ```
 ./build.sh
 ```
-and follow the instruction. This will build you three dockers, and you can test you website.
+and follow the instruction. This will build you three dockers. After a few moments you can access your website via your browser:
+```
+yourdomain.xyz
+```
 
 ## Hint
 If you want to edit the website and check the changes, you can locally start the website:
