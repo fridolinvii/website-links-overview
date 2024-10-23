@@ -2,7 +2,7 @@
 You can follow this step-by-step guide on how to host this website on your Ubuntu server so that it will be accessible with HTTPS and gives an overview of the links from your Researchgate, LinkedIn, and GitHub account.
 
 ## Step 1 - Domain
-Get a domain, for example from [namecheap.com](www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
+Get a domain, for example from [namecheap.com](https://www.namecheap.com). Choose your domain, e.g., `yourdomain.xyz`.
 Next, set up an A Record with the Host as `@` (or a specific prefix you want to use, e.g., `www`) and the Value as your IP address.
 
 ## Step 2 - Install
@@ -20,7 +20,7 @@ and enter the folder.
 cd website-links-overview
 ```
 
-Follow the instruction on ![nodejs.org](www.nodejs.org) to install _Node.js_:
+Follow the instruction on [nodejs.org](https://www.nodejs.org) to install _Node.js_:
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
