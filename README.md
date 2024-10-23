@@ -20,7 +20,7 @@ and enter the folder.
 cd website-links-overview
 ```
 
-Follow the instruction on [nodejs.org](www.nodejs.org) to install _Node.js_:
+Follow the instruction on ![nodejs.org](www.nodejs.org) to install _Node.js_:
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
